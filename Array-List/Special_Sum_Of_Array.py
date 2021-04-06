@@ -12,8 +12,8 @@ def special_sum(li):
         sum=sum+li[i]
     sum=array_sum(sum)
     if sum>=9:
-        etc=array_sum(sum)
-    print(etc)
+        sum=array_sum(sum)
+    print(sum)
 
 n=int(input())
 li=[int(x) for x in input().split()]
