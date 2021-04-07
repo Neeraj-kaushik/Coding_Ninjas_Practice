@@ -4,10 +4,14 @@ def is_consecutive(li):
         for j in range(i+1,length):
             if li[i]>li[j]:
                 li[i],li[j]=li[j],li[i]
-    if li[-1]-li[0]==length-1:
+    if length==1:
         return True
-    else:
-        return False
+    for i in range(length-1):
+        if li[i+1]-li[i]==1:
+            return True
+        else:
+            return False
+            break
 
 
 
