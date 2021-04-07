@@ -7,11 +7,9 @@ def is_consecutive(li):
     if length==1:
         return True
     for i in range(length-1):
-        if li[i+1]-li[i]==1:
-            return True
-        else:
+        if li[i+1]-li[i]!=1:
             return False
-            break
+    return True
 
 
 
